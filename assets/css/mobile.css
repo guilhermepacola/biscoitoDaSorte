@@ -87,7 +87,7 @@ main{
     color: var(--base-blue-200);
 }
 #btnOpen{
-    height: 25rem;
+    max-height: 25rem;
 }
 #btnOpen img:hover{
     animation: shakecookie 0.2s;
