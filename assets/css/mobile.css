@@ -98,6 +98,10 @@ main{
 
 }
 
+#btnOpen img{
+    width: 75%;
+}
+
 .luckBox{
     display: flex;
     padding: 10px;
