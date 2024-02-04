@@ -87,7 +87,7 @@ main{
     color: var(--base-blue-200);
 }
 #btnOpen{
-    max-height: 25rem;
+    height: 30rem;
     width: 30rem;
 }
 #btnOpen img:hover{
