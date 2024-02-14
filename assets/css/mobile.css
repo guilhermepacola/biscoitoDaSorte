@@ -87,7 +87,7 @@ main{
     color: var(--base-blue-200);
 }
 #btnOpen{
-    height: 30rem;
+    height: 25rem;
     width: 30rem;
 }
 #btnOpen img:hover{
@@ -99,7 +99,7 @@ main{
 }
 
 #btnOpen img{
-    width: 75%;
+    width: 95%;
 }
 
 .luckBox{
