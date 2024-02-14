@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-:root{
+:root {
     font-size: 62.5%;
 
     /*Fonts*/
@@ -16,15 +16,15 @@
 
     /*Colors*/
     --base-body-gradient: linear-gradient(45deg, #190361 0%, #B0F 100%);
-    --base-white-100:hsla(0, 0%, 100%, 1);
-    --base-orange-100:hsla(35, 100%, 50%, 1);
-    --base-blue-100:hsla(198, 32%, 92%, 1);
+    --base-white-100: hsla(0, 0%, 100%, 1);
+    --base-orange-100: hsla(35, 100%, 50%, 1);
+    --base-blue-100: hsla(198, 32%, 92%, 1);
     --base-blue-200: hsla(238, 27%, 28%, 1);
     --base-black-100: hsla(0, 0%, 0%, 1);
 }
 
 
-body{
+body {
     background: var(--base-body-gradient);
     min-height: 100vh;
 
@@ -37,13 +37,13 @@ body{
     background-size: 200% 200%;
 }
 
-main{
-    padding: 4.8rem 5.4rem;
+main {
+    padding: 2.8rem 2.4rem;
     background: #FFF;
 
     border-radius: 6px;
     box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
-    max-width: 55rem;
+    max-width: 47rem;
 }
 
 .screenOne,
@@ -52,26 +52,27 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
+
     gap: 2.6rem;
 
     animation: fade 2s;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
-.textTop{
+.textTop {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+
     gap: 1.4rem;
 }
 
-.textTop h1, .screenTwo h1{
+.textTop h1,
+.screenTwo h1 {
     font-family: var(--base-montserrat-font);
     font-weight: 700;
 
@@ -80,34 +81,37 @@ main{
     text-align: center;
 }
 
-.textTop p{
+.textTop p {
     font-family: var(--base-dmsans-font);
     font-weight: 400;
     font-size: 2rem;
     color: var(--base-blue-200);
 }
-#btnOpen{
-    height: 25rem;
+
+.screenOne #btnOpen {
     width: 30rem;
+    height: 27rem;
+    border: none;
+    background-color: var(--base-white-100);
 }
-#btnOpen img:hover{
+
+.screenOne #btnOpen img{
+    max-width: 28rem;
+}
+.screenOne #btnOpen img:hover {
     animation: shakecookie 0.2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 
 }
 
-#btnOpen img{
-    width: 95%;
-}
-
-.luckBox{
+.luckBox {
     display: flex;
     padding: 10px;
     justify-content: center;
     align-items: center;
-    
+
     gap: 10px;
     background-color: var(--base-blue-100);
     box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
@@ -116,28 +120,22 @@ main{
 
 }
 
-#luckText{
-font-family: var(--base-dancingscript-font);
-font-size: 2.4rem;
-text-align: center;
+#luckText {
+    font-family: var(--base-dancingscript-font);
+    font-size: 2.4rem;
+    text-align: center;
 
-color: var(--base-black-100);
+    color: var(--base-black-100);
 
-border: 2px solid rgb(13, 179, 250);
-padding: 0.8rem;
+    border: 2px solid rgb(13, 179, 250);
+    padding: 0.8rem;
 
 }
 
-
-.screenOne #btnOpen{
-    border: none;
-    background-color: var(--base-white-100);
-}
-
-.screenTwo #btnRefresh{
+.screenTwo #btnRefresh {
     padding: 16px;
     background: var(--base-orange-100);
-    
+
     font-family: var(--base-dmsans-font);
     font-weight: 700;
     color: var(--base-white-100);
@@ -147,7 +145,7 @@ padding: 0.8rem;
     border: none;
 }
 
-.screenTwo #btnRefresh:hover{
+.screenTwo #btnRefresh:hover {
     filter: brightness(115%);
     box-shadow: -0.5px 3px 5px 1px rgba(85, 85, 85, 0.50);
 }
